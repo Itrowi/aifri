@@ -14,7 +14,7 @@ Quick setup (PowerShell on Windows):
    pip install -r requirements.txt
 
 3. (Optional) Add an NCBI API key to increase request limits
-   $env:NCBI_API_KEY = "YOUR_NCBI_API_KEY"
+   api sk-UzqJxmbR7WoHxCN1KR0eRw
 
 4. Run the app
    uvicorn app:app --reload --port 8000
