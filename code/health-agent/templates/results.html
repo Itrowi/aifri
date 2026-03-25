@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Results - Health Explainer Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Results for "{{ topic }}"</h1>
+      <a href="/">New search</a>
+      <ul>
+        {% for r in results %}
+        <li>
+          <h3>{{ r.title }} <small>(PMID: {{ r.pmid }})</small></h3>
+          <p>{{ r.simple }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="note">Educational only. Not medical advice.</p>
+    </div>
+  </body>
+</html>
