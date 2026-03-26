@@ -1,0 +1,356 @@
+/* Results Page Styles */
+
+.results-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.results-header {
+    margin-bottom: 40px;
+}
+
+.results-header h1 {
+    font-size: 2rem;
+    margin: 20px 0 10px;
+    color: #222;
+}
+
+.results-subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+    font-style: italic;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    background: #f0f2f5;
+    color: #667eea;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* Results List */
+.results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.result-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    animation: slideDown 0.4s ease;
+}
+
+.result-card:hover {
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+    transform: translateY(-2px);
+    border-color: #667eea;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.result-header h3 {
+    flex: 1;
+    font-size: 1.2rem;
+    margin: 0;
+    color: #222;
+    line-height: 1.4;
+}
+
+.pmid-badge {
+    background: #667eea;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.result-content {
+    margin-bottom: 20px;
+}
+
+.explanation-text {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 0;
+    text-align: justify;
+}
+
+.script-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    margin-top: 15px;
+}
+
+.script-content p {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.video-script-section {
+    margin-bottom: 20px;
+}
+
+.script-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.script-header h4 {
+    margin: 0;
+    color: #222;
+}
+
+.script-duration {
+    background: #667eea;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Result Footer */
+.result-footer {
+    padding-top: 15px;
+    border-top: 1px solid #dee2e6;
+    margin-bottom: 15px;
+}
+
+.source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #e3f2fd;
+    color: #1976d2;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.source-link:hover {
+    background: #1976d2;
+    color: white;
+    text-decoration: none;
+}
+
+/* Copy Button Container */
+.copy-button-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-copy {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-copy:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
+}
+
+.btn-copy.copied {
+    background: #2196F3;
+}
+
+.btn-download {
+    background: #2196F3;
+}
+
+.btn-download:hover {
+    background: #1976d2;
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.3);
+}
+
+/* Results Actions */
+.results-actions {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-new-search {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-new-search:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+/* No Results */
+.no-results {
+    text-align: center;
+    padding: 40px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.no-results p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.no-results .btn-back {
+    display: inline-block;
+}
+
+/* Disclaimer Section */
+.disclaimer-section {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #e9ecef;
+}
+
+.disclaimer {
+    background: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #ffc107;
+    margin: 0 0 20px 0;
+}
+
+.video-tips {
+    background: #e7f3ff;
+    border-left: 4px solid #2196F3;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.video-tips h4 {
+    margin-top: 0;
+    color: #1976d2;
+}
+
+.video-tips ul {
+    margin: 15px 0 0;
+    padding-left: 20px;
+}
+
+.video-tips li {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.video-tips li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .results-container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .results-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .result-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pmid-badge {
+        align-self: flex-start;
+    }
+
+    .copy-button-container {
+        flex-direction: column;
+    }
+
+    .btn-copy,
+    .btn-download {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .script-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .explanation-text {
+        text-align: left;
+    }
+}

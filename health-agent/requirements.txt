@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+httpx
+jinja2
+python-dotenv
+beautifulsoup4
+starlette-sessions
+itsdangerous
+python-multipart
+openai
+# Optional (for production): gunicorn, prometheus-client, etc.
